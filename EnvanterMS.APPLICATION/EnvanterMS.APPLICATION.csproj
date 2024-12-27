@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\Customer\Commands\" />
+    <Folder Include="Features\Customer\Models\" />
+    <Folder Include="Features\Customer\Rules\" />
+    <Folder Include="Features\Customer\DTOs\" />
+    <Folder Include="Features\Order\Rules\" />
+    <Folder Include="Features\Order\Commands\" />
+    <Folder Include="Features\Order\DTOs\" />
+    <Folder Include="Features\Product\Rules\" />
+    <Folder Include="Features\Product\Commands\" />
+    <Folder Include="Features\Product\DTOs\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EnvanterMS.DOMAIN\EnvanterMS.DOMAIN.csproj" />
+  </ItemGroup>
+
+</Project>
